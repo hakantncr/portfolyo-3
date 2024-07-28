@@ -1,0 +1,72 @@
+body {
+    background-color: white;
+}
+nav  {
+    position: sticky;
+    padding: 1.5em 0 1.5em 5em;
+    height: 5em;
+    display: flex;
+    background-color: #000;
+    align-items: center;
+    transition: background-color 0.4s ease-in-out, background-color 1s ease-in-out;
+}
+nav.scrolled {
+    background-color: #0c0b0b;
+    opacity: 0.99;
+}
+
+nav ul {
+    margin-left: auto;
+}
+nav a {
+    font-weight: bold;
+    font-family: Arial;
+    margin-left: 3em;
+    color: white;
+}
+.header {
+    width: auto;
+    height: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: black;
+}
+
+header h1 {
+    font-size: 80px;
+    text-align: center;
+    padding-top: 3em;
+    color: white;
+    font-family: "Courier New";
+}
+header p {
+    padding-bottom: 4em;
+    color: white;
+    font-family: Arial;
+}
+
+.header-img {
+    transform: scale(1);
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    height: auto;
+    width: 20em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    padding-right: 0;
+    margin-left: 0;
+}
+.header-img:hover {
+    opacity: 0.4;
+    transform: scale(1.2);
+}
+
+h5 {
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 17px;
+    padding-top: 1em;
+    margin-bottom: 4em;
+    color: white;
+}
