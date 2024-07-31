@@ -1,22 +1,23 @@
 body {
-
     place-items: center;
     align-items: center;
     min-height: 100vh;
-    background-color: ;
 }
 nav  {
     position: sticky;
     padding: 1.5em 0 1.5em 5em;
     height: 5em;
     display: flex;
-    background-color: #000;
+    background-color: #0e0e0e;
     align-items: center;
-    transition: background-color 0.4s ease-in-out, background-color 1s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 nav.scrolled {
-    background-color: #1b1919;
+    background-color: #000;
     opacity: 0.99;
+}
+nav.scrolled a {
+    color: #fff;
 }
 
 nav ul {
@@ -33,11 +34,11 @@ nav a {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: black;
+    background-color: #0e0e0e;
 }
 
 header h1 {
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
     padding-top: 3em;
     color: white;
@@ -80,7 +81,7 @@ h5 {
 .hidden {
     opacity: 0;
     filter: blur(2px);
-    transform: translateX(-70%);
+    transform: translateX(-50%);
     transition: all 1s;
 }
 .show {
@@ -99,7 +100,7 @@ h5 {
     transition-delay: 600ms;
 }
 .hidden-child-4 {
-    transition-delay: 600ms;
+    transition-delay: 800ms;
 }
 
 /*.vr {
@@ -118,35 +119,52 @@ h5 {
     padding-bottom: 0;
     font-size: 30px;
     color: black;
-    font-family: "Courier New";
+    font-family: inherit;
     text-align: center;
 }
+.section-h2 {
+    text-align: center;
+    margin-top: 8em;
+    font-size: 25px;
+    font-family: inherit;
+    font-weight: bold;
+}
 section p {
-    font-family: Arial;
+    font-family: inherit;
     font-size: 15px;
     margin-top: 1em;
     margin-bottom: 1em;
     text-align: center;
     color: black;
 }
+.section-a {
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    margin-top: 1em;
+    background-color: black;
+    color: white;
+}
 
 .section-img {
+    width: 110%;
+    height: 110%;
     text-align: center;
-    padding-bottom: 3em;
+    padding-bottom: 1em;
 }
 
 img {
     border-radius: 2px 2px 2px 2px;
 }
 
-.person-container-bg {
-    height: 450px;
+.payment-bg {
     background-color: white;
 }
-.person-container-img {
+.payment-img {
     padding-top: 3em;
+    margin-bottom: 5em;
 }
-.person-container-h2 {
+.payment-h2 {
     font-weight: bold;
     font-family: Arial;
     font-size: 28px;
@@ -154,10 +172,13 @@ img {
     text-align: center;
     color: black;
 }
+main {
+    padding-top: 2em;
+    padding-bottom: 5em;
+}
 
 .blog-bg {
-    height: 900px;
-    background-color: #000;
+    background-color: #0e0e0e;
 }
 .blog-h6 {
     font-family: "Fira Code";
@@ -167,9 +188,9 @@ img {
     color: white;
 }
 .blog-h4 {
-    font-size: 25px;
+    font-size: 27px;
     color: white;
-    font-family: "Fira Code";
+    font-family: inherit;
 }
 .blog-p {
     font-family: -apple-system;
@@ -177,9 +198,10 @@ img {
     font-size: 13px;
     color: white;
 }
+
 .blog-ul-li {
     font-family: sans-serif;
-    color: white;
+    color: #b5b5b5;
     font-size: 10px;
 }
 
@@ -191,4 +213,53 @@ img {
     font-size: small;
     color: white;
     margin-top: 8em;
+}
+footer {
+    list-style: none;
+}
+.footer-bg {
+    background-color: #fff8f8;
+}
+footer li {
+    text-align: center;
+
+}
+footer ul {
+    display: flex;
+    padding-top: 3em;
+    padding-bottom: 5em;
+    text-align: center;
+    list-style-type: none;
+}
+footer ul li img {
+    width: 90px;
+    height: 60px;
+    align-items: center;
+}
+footer p {
+    display: inline-block;
+    margin-left: 3em;
+    color: black;
+}
+footer h2 {
+    font-weight: bold;
+    font-size: 29px;
+    color: #000000;
+    padding-top: 2em;
+    padding-bottom: 5px;
+}
+footer a {
+    text-align: center;
+    color: black;
+    margin-top: 4em;
+    margin-left: 19px;
+}
+footer h4 {
+    font-size: 17px;
+    color: #363636;
+}
+.footer-icons {
+    padding-top: 4em;
+    padding-left: 5em;
+    padding-bottom: 5em;
 }
